@@ -26,6 +26,7 @@ def list_folders(path):
         .list(
             str(path),
             {
+                "limit": 2000,
                 "offset": 0,
                 "sortBy": {"column": "name", "order": "desc"},
             }
